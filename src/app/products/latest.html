@@ -1,0 +1,228 @@
+<html>
+  <head>
+  <title></title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <style>
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: red;
+  opacity: 1; /* Firefox */
+  font-size: 12px;
+}
+  	div.card-header {
+ 		font-size: large;
+	}
+	div.card {
+  		margin-top: 40px;
+  		margin-left: 300px;
+  		margin-right: 300px;
+	}
+
+	.table {
+  		margin-top: 0px
+	}
+	thead {
+    	color: #337AB7;
+  }
+  p{
+  	color: #337AB7;
+  	margin-left: 300px;
+  	margin-top: 20px;
+  }
+  </style>
+  </head>
+  <body>
+ 	<div class='card'>
+    <div class='card-header'>
+      Customer Details
+    </div>
+    <div class='table-responsive'>
+        <table class='table'>
+        	<!--
+        	<thead>
+        		 <tr>
+                <th>Technique</th>
+                <th>Selection</th>
+            	</tr>
+        	</thead>
+        	<tbody>
+        		<tr>
+        			<td>
+                  Driver-Age
+                </td>
+                <td>
+                	Selection
+        		</td>
+        	</tr>
+        	</tbody>
+        -->
+        <form action = "http://localhost:5000/result" method = "POST">
+         <p>Name &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type = "text" name = "Name" id = "name1" onfocusout="myFunction1()" />
+         <p>Phone-Number&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type = "text" name = "Phone-Number" id = "name2" onfocusout="myFunction2()" /></p>
+         <p>Email &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type = "text" name = "Email" id = "name3" onfocusout="myFunction3()" /></p>
+         <p>Gender &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type ="text" name = "Gender" id = "name4" onfocusout="myFunction4()" /></p>
+         <p>State &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type = "text" name = "LocState" id = "name5" onfocusout="myFunction5()"  /></p>
+         <p>Vehicle-Year &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type = "text" name = "Vehicle-Year" id = "name6" onfocusout="myFunction6()" /></p>
+         <p>Driver-Age &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type ="text" name = "Driver-Age" id = "name7" onfocusout="myFunction7()" /></p>
+         <p>Employment-Status &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type = "text" name = "Employment-Status" id = "name8" onfocusout="myFunction8()" /></p>
+         <p>Weekly-Wage &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type = "text" name = "Weekly-Wage" id = "name9" onfocusout="myFunction9()" /></p>
+         <p>Martial-Status &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type ="text" name = "Martial-Status" id = "name10" onfocusout="myFunction10()" /></p>
+         <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type = "submit" value = "Submit" class='btn btn-primary' /></p>
+      </form>
+        </table>
+    </div>
+	</div>
+  <script>
+    function myFunction1() {
+      var x = document.getElementById("name1");
+      if(!x.value)
+      {
+        x.placeholder = "Required input field";
+      }
+      var format = /[ !@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/;
+      if(format.test(x.value) || /\d/.test(x.value))
+      {
+          x.value = ""
+          x.placeholder = "No digits/special characters";
+      }
+
+  }
+  function myFunction2() {
+      var x = document.getElementById("name2");
+      if(!x.value)
+      {
+        x.placeholder = "Required input field";
+      }
+      if(!/\d/.test(x.value))
+      {
+          x.value = ""
+          x.placeholder = "Please enter digits only";
+      }
+
+      //var y = document.getElementsByName("Phone-Number")[0];
+      //y.value=2;
+
+  }
+  function myFunction3() {
+      var x = document.getElementById("name3");
+      if(!x.value)
+      {
+        x.placeholder = "Required input field";
+      }
+      var format = /[@]/;
+      if(!format.test(x.value))
+      {
+        x.value = ""
+        x.placeholder = "Invalid Email-ID"
+      }
+      //var y = document.getElementsByName("Phone-Number")[0];
+      //y.value=2;
+
+  }
+  function myFunction4() {
+      var x = document.getElementById("name4");
+      if(!x.value)
+      {
+        x.placeholder = "Required input field";
+      }
+      if(!(x.value =='m' || x.value == 'M' || x.value == 'f' || x.value == 'F'))
+      {
+        x.value = "";
+        x.placeholder = "Please enter M/F"
+      }
+      //var y = document.getElementsByName("Phone-Number")[0];
+      //y.value=2;
+
+  }
+  function myFunction5() {
+      var x = document.getElementById("name1");
+      if(!x.value)
+      {
+        x.placeholder = "Required input field";
+      }
+      var format = /[ !@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/;
+      if(format.test(x.value) || /\d/.test(x.value))
+      {
+          x.value = ""
+          x.placeholder = "No digits/special characters";
+      }
+  }
+  function myFunction6() {
+      var x = document.getElementById("name6");
+      if(!x.value)
+      {
+        x.placeholder = "Required input field";
+      }
+      var format = /[ !@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/;
+      if(format.test(x.value) || !(/\d/.test(x.value)) || x.value.length != '4')
+      {
+        x.value = ""
+        x.placeholder = "Please enter valid year"
+      }
+
+      //var y = document.getElementsByName("Phone-Number")[0];
+      //y.value=2;
+
+  }
+  function myFunction7() {
+      var x = document.getElementById("name7");
+      if(!x.value)
+      {
+        x.placeholder = "Required input field";
+      }
+      if(!(/\d/.test(x.value)) || ((Number(x.value)) < 0 || Number(x.value) > 140))
+      {
+        x.value = "";
+        x.placeholder = "Please enter a valid age"
+      }
+      //var y = document.getElementsByName("Phone-Number")[0];
+      //y.value=2;
+
+  }
+   function myFunction8() {
+       var x = document.getElementById("name8");
+      if(!x.value)
+      {
+        x.placeholder = "Required input field";
+      }
+      if(x.value != 'yes' && x.value != 'no')
+      {
+        x.value = ""
+        x.placeholder = "Please enter yes/no";
+      }
+
+  }
+  function myFunction9() {
+      var x = document.getElementById("name9");
+      if(!x.value)
+      {
+        x.placeholder = "Required input field";
+      }
+      var format = /[ !@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/;
+      if(format.test(x.value) || !(/\d/.test(x.value)))
+      {
+          x.value = ""
+          x.placeholder = "Please enter digits only"
+      }
+      //var y = document.getElementsByName("Phone-Number")[0];
+      //y.value=2;
+
+  }
+  function myFunction10() {
+       var x = document.getElementById("name10");
+      if(!x.value)
+      {
+        x.placeholder = "Required input field";
+      }
+      if(x.value != 'yes' && x.value != 'no')
+      {
+        x.value = ""
+        x.placeholder = "Please enter yes/no";
+      }
+      //var y = document.getElementsByName("Phone-Number")[0];
+      //y.value=2;
+
+  }
+
+  </script>
+  </body>
+</html>	

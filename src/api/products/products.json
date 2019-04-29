@@ -1,0 +1,92 @@
+[
+  {
+    "productId": 1,
+    "productName": "Decision Tree",
+    "productCode": "Regression",
+    "accuracy": "852327",
+    "description": "A decision tree is a flowchart-like tree structure, where each internal node denotes a test on an attribute, each branch represents an outcome of the test, and each leaf node (terminal node) holds a class label. Decision trees look to minimize entropy or “mixedness”. This means splitting based on certain conditions to end up with leaf nodes that are predominantly populated by items from one class.",
+    "starRating": 2
+    
+  },
+  {
+    "productId": 2,
+    "productName": "Gradient Boost",
+    "productCode": "Regression",
+    "accuracy": "682921",
+    "description": "Gradient boosting is a machine learning technique for regression and classification problems, which produces a prediction model in the form of an ensemble of weak prediction models, typically decision trees. Boosting is an attempt to create a strong learner from a set of weak learners, which are added and weighted.",
+    
+    "starRating": 4
+  },
+  {
+    "productId": 5,
+    "productName": "Support Vector Machine",
+    "productCode": "Regression",
+    "accuracy": "615799",
+    "description": "A support vector machine is a supervised learning algorithm that sorts data into two categories. It is trained with a series of data already classified into two categories, building the model as it is initially trained. The task of an SVM algorithm is to determine which category a new data point belongs in. This makes SVM a kind of non-binary linear classifier. ",
+    
+    "starRating": 5
+  },
+  {
+    "productId": 8,
+    "productName": "LSTM",
+    "productCode": "Regression",
+    "accuracy": "708364",
+    "description": "Long short-term memory neural networks are a modification of recurrent neural networks that handle long sequences. They can keep sequences in memory for arbitrary periods of time. Gates regulate the flow of information in and out of the cell, and decide what the cell should “forget”. They are especially useful for dealing with time series data and other sequential data like text.",
+    
+    "starRating": 3
+  },
+  {
+    "productId": 10,
+    "productName": "Decision Tree",
+    "productCode": "Classification",
+    "accuracy": "43.88%",
+    "description": "A decision tree is a flowchart-like tree structure, where each internal node denotes a test on an attribute, each branch represents an outcome of the test, and each leaf node (terminal node) holds a class label. Decision trees look to minimize entropy or “mixedness”. This means splitting based on certain conditions to end up with leaf nodes that are predominantly populated by items from one class.",
+    
+    "starRating": 5
+  },
+  {
+    "productId": 15,
+    "productName": "Random Forest",
+    "productCode": "Classification",
+    "accuracy": "42.35%",
+    "description": "A random forest is a collection of decision trees used for classification and regression, following the method of bagging. For classification, the overall prediction is the mode of the individual trees. For regression, it is the average prediction. It is a form of supervised ensemble learning.",
+    
+    "starRating": 4
+  },
+  {
+    "productId": 11,
+    "productName": "SVM Classifier",
+    "productCode": "Classification",
+    "accuracy": "38.97%",
+    "description": "A support vector machine is a supervised learning algorithm that sorts data into two categories. It is trained with a series of data already classified into two categories, building the model as it is initially trained. The task of an SVM algorithm is to determine which category a new data point belongs in. This makes SVM a kind of non-binary linear classifier. ",
+    
+    "starRating": 2
+  },
+  {
+    "productId": 12,
+    "productName": "Gaussian Naive Bayes",
+    "productCode": "Classification",
+    "accuracy": "41.25%",
+    "description": "Naive Bayes is a classification algorithm for binary (two-class) and multi-class classification problems. The technique is easiest to understand when described using binary or categorical input values.It is called naive Bayes or idiot Bayes because the calculation of the probabilities for each hypothesis are simplified to make their calculation tractable",
+    
+    "starRating": 3
+  },
+  {
+    "productId": 13,
+    "productName": "Nearest Neighbours Classifier",
+    "productCode": "Classification",
+    "accuracy": "41.24%",
+    "description": "This is a simple machine learning technique that classifies a point based on the majority class of its k closest neighbours. K is often chosen as an odd number to eliminate the chance of a tie.",
+    
+    "starRating": 3
+  },
+  {
+    "productId": 14,
+    "productName": "MLP Neural Network",
+    "productCode": "Classification",
+    "accuracy": "32.43%",
+    "description": "A multilayer perceptron (MLP) is a deep, artificial neural network. It is composed of more than one perceptron. They are composed of an input layer to receive the signal, an output layer that makes a decision or prediction about the input, and in between those two, an arbitrary number of hidden layers that are the true computational engine of the MLP. MLPs with one hidden layer are capable of approximating any continuous function.",
+    
+    "starRating": 1
+  }
+]

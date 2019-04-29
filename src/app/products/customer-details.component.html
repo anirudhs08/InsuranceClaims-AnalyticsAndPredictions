@@ -1,0 +1,66 @@
+<div class='card'>
+    <div class='card-header'>
+      {{pageTitle}}
+    </div>
+    <div class='table-responsive'>
+        <table class='table'>
+          <thead>
+            <tr>
+                <th>Name</th>
+                <th>Phone-Number</th>
+                <th>Email</th>
+                <th>Gender</th>
+                <th>State</th>
+                <th>Vehicle-manufacture-Year</th>
+                <th>Driver-Age</th>
+                <th>Employment-Status</th>
+                <th>Weekly-wage</th>
+                <th>Marital Status</th>
+                <th>INCURRED-1</th>
+                <th>INCURRED-2</th>
+                <th>INCURRED-3</th>
+                <th>INCURRED-4</th>
+            </tr>
+            </thead>
+            <tbody>
+              <!--
+                <tr><*ngFor="let i of splitted"> 
+                  <td>{{splitted[0]}}</td>
+                  <td>{{splitted[1]}}</td>
+                  <td>{{splitted[2]}}</td>
+                  <td>{{splitted[3]}}</td>
+                  <td>{{splitted[4]}}</td>
+                  <td>{{splitted[5]}}</td>
+                  <td>{{splitted[6]}}</td>
+                  <td>{{splitted[7]}}</td>
+                  <td>{{splitted[8]}}</td>
+                  <td>{{splitted[9]}}</td>
+                  <td>{{splitted[10]}}</td>
+                  <td>{{splitted[11]}}</td>
+                  <td>{{splitted[12]}}</td>
+                  <td>{{splitted[13]}}</td>
+                  </tr>
+                -->
+                <tr *ngFor='let user of userTestStatus'>
+                  <td>{{user.name}}</td>
+                  <td>{{user.phoneNumber}}</td>
+                  <td>{{user.email}}</td>
+                  <td>{{user.gender}}</td>
+                  <td>{{user.state}}</td>
+                  <td>{{user.vehicleYear}}</td>
+                  <td>{{user.driverAge}}</td>
+                  <td>{{user.employmentStatus}}</td>
+                  <td>{{user.weeklyWage}}</td>
+                  <td>{{user.maritalStatus}}</td>
+                  <td>{{user.incurred1}}</td>
+                  <td>{{user.incurred2}}</td>
+                  <td>{{user.incurred3}}</td>
+                  <td>{{user.incurred4}}</td>
+
+                </tr>
+
+
+            </tbody>
+          </table>
+      </div>
+  </div>
