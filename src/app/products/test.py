@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 app = Flask(__name__)
 import InsuranceAnalytics
-
+import Running_saved_models
 
 @app.route('/')
 def student():
@@ -28,7 +28,8 @@ def result():
          print(type(j))
          final_res.append(j[0:j.find("'")])
       #print(final_res)
-      modi = InsuranceAnalytics.analytics(final_res)
+      #modi = InsuranceAnalytics.analytics(final_res)
+      modi = Running_saved_models.analytics(final_res)
       print(modi)
       text_file = open("C:/Users/320053936/Downloads/frontEnd-duplicate/src/assets/myFile.txt", "w")
       for item in modi:
