@@ -10,3 +10,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 1) npm install
 2) npm start
+
+## Machine learning codes
+
+All the ML codes are uploaded in a zipped folder called ML-Codes
